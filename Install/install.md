@@ -21,3 +21,12 @@ This Includes
 
 
 For rest info Check `install.bat`
+
+### Installing Package managers
+- For Chocolatey, Open Powershell as Admin then 
+
+  ```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```
+
+- For Scoop `iex "& {$(irm get.scoop.sh)} -RunAsAdmin"`
+
+or execute `_install-package-manager.ps1` in elevated powershell terminal
