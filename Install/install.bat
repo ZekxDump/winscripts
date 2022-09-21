@@ -101,3 +101,31 @@ echo.
 rem echo Installing ffmpeg
 rem choco install -y ffmpeg
 rem echo.
+
+echo -----------------------
+echo -------Dev Tools-------
+echo -----------------------
+
+echo Installing Python
+choco install -y python
+echo.
+
+rem echo Installing Helix Editor
+rem choco install -y helix
+rem echo.
+
+rem echo -----------------------
+:: Language Servers for HELIX Editor
+
+rem echo Installing LLVM Toolkit
+rem choco install -y llvm
+rem echo.
+
+rem echo Installing Pylsp
+rem pip install -U setuptools     &:: If you get an error similar to 'install_requires' must be a string or list of strings you need to update Setup Tools
+rem pip install python-lsp-server
+rem pip install python-lsp-server[all]
+
+rem echo Installing Lapce
+rem scoop install lapce
+rem echo.
